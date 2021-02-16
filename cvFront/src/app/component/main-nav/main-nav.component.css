@@ -1,0 +1,46 @@
+.sidenav-container {
+  height: 100%;
+}
+.sidenav {
+  width: 200px;
+}
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.logo{
+  background-color: aqua;
+}
+a{
+  color: #000000;
+  font-weight: 700;
+  transition: all 1s;
+  cursor:pointer;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 500;
+}
+a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+.menuWeb a{
+  margin-left: 20px;
+}
+
+@media (min-width:590px){
+  .sidenav {
+      display: none;
+  }
+}
+@media (max-width:600px){
+  .linkMenuWeb{
+      display: none;
+  }
+}
+

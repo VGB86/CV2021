@@ -1,0 +1,51 @@
+GET http://localhost:3000/api/proyectos 
+access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiVmlyZ2luaWEiLCJjcmF0ZWRBdCI6MTYxMDI4ODg3MSwiZXhwaXJlZEF0IjoxNjEwMjg5MDUxfQ.uvs0VlR36ChOL0MsfPOHFLzS8GDAeUSVoCo9tQJ_504
+
+###
+GET http://localhost:3000/api/proyectos/categoria/angular
+access-token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiVmlyZ2luaWEiLCJjcmF0ZWRBdCI6MTYxMDM1NzI2NywiZXhwaXJlZEF0IjoxNjEwMzU3NDQ3fQ.1h4Hz4GJLpxK5Fci1ltgbCky_KM4EQnqm3kp6DqlS0U
+
+###
+GET http://localhost:3000/api/proyectos/5ffdb7d6d31d34034820b59f
+access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiVmlyZ2luaWEiLCJjcmF0ZWRBdCI6MTYxMDQ2NTYzNSwiZXhwaXJlZEF0IjoxNjEwNDY1ODE1fQ.x3ACFVBRuvKCxJkjcRMr9Va7nqMK440dU89imgXqlBU
+
+
+###
+POST http://localhost:3000/api/proyectos
+Content-Type: application/json
+access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiVmlyZ2luaWEiLCJjcmF0ZWRBdCI6MTYxMDQ2MzEyMywiZXhwaXJlZEF0IjoxNjEwNDYzMzAzfQ._1qsC-6NYbbmhYGi17hhqJ6zZfBSzkbLSsIplymOY20
+
+{
+    "titulo":"Mongo WEB",
+    "descripcion":"gvHBUJFANIKGSKOLMDG",
+    "url":"www.a.com",
+    "cliente":"afg",
+    "url_cliente":"www.a.com/abc",
+    "categoria":"backend"
+}
+
+###
+PUT http://localhost:3000/api/proyectos/5ff84b6623ce5406e8ed6579 
+Content-Type: application/json
+
+{
+    "titulo":"Proyecto EDITADO",
+    "descripcion":"HFBbgsdj<sgbghbugoidf",
+    "url":"www.a.com",
+    "cliente":"WGF",
+    "url_cliente":"www.a.com/abc"
+}
+
+###
+DELETE http://localhost:3000/api/proyectos/5ff848b03b0a5705e89a976c
+
+###
+GET http://localhost:3000/api/token
+
+###
+GET https://vgcv2021.herokuapp.com/api/proyectos
+Content-Type: application/json
+access-token:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvIjoiVmlyZ2luaWEiLCJjcmF0ZWRBdCI6MTYxMTEzOTA2NiwiZXhwaXJlZEF0IjoxNjExMTM5MjQ2fQ.E3zLAqXUR-sWhTQPzwQH-ngcCY4RRBr29ac5JaARKfs
+
+###
+GET https://vgcv2021.herokuapp.com/api/token

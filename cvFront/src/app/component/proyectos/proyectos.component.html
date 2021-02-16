@@ -1,0 +1,23 @@
+<div class="contenedor">
+    <h2>Proyectos</h2>
+    <div class="filtros">
+        <ul>
+            <li (click)="cargarCategorias()">Todos</li>
+            <li (click)="cargarCategorias(categoria)" *ngFor="let categoria of arrCategoria">{{categoria}}</li>
+        </ul>
+    </div>
+    <div class="list-pojects">
+        <div class="proyecto" *ngFor="let proyecto of arrProyectos">
+            <div class="p-head">
+                <h3>{{proyecto.titulo}}</h3>
+            </div>
+            <div class="p-body">
+                <p>Desarrollado con:<br>{{proyecto.categoria}}</p>
+                <a href="{{proyecto.repo}}" class="myButton repo">-ver repocitorio-</a>
+                <div class="footer">
+                    <a href="{{proyecto.url}}" class="myButton web">WEB</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
