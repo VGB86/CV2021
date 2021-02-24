@@ -10,25 +10,22 @@ import { ProjectService } from 'src/app/services/project-service';
 
 export class ProyectosComponent implements OnInit {
 
- 
   arrProyectos:Project[];
   arrCategoria: String [];
 
-  constructor(private projectService: ProjectService) { 
-    
-   }
+  constructor(private projectService: ProjectService) {  
+  }
 
   ngOnInit(): void {
     this.obtenerProyectos()
     this.cargarCategorias()
-    
   }
 
   async obtenerProyectos(){
     this.arrProyectos = await this.projectService.getAllProjects();
     console.log(this.arrProyectos)
     const arrayString = this.arrProyectos.map(proyecto =>{
-      return proyecto.categoria
+      return proyecto.categoria;
     })
     this.arrCategoria = Array.from(new Set(arrayString));
     console.log(this.arrCategoria);

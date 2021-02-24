@@ -11,7 +11,7 @@ export class ProjectService {
   baseUrl:string;
 
   constructor( private httpClient: HttpClient) { 
-      this.baseUrl = 'https://vgcv2021.herokuapp.com/api/proyectos/';
+      this.baseUrl = 'https://vgcv2021.herokuapp.com/api/proyectos';
       this.getToken();
   };
 
@@ -40,7 +40,7 @@ export class ProjectService {
 
   getProjectsByCategory(Categoria:String):Promise <Project[]> {
     const httpOptions = this.getOptions()
-    return this.httpClient.get<Project[]>(this.baseUrl + 'categoria/' + Categoria, httpOptions).toPromise()
+    return this.httpClient.get<Project[]>(this.baseUrl + '/categoria/' + Categoria, httpOptions).toPromise()
   }
 
   getProjectById(id:string):Promise <Project>{
