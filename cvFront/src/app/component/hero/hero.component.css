@@ -50,6 +50,10 @@ strong{
 img{
     max-width: 98%;
 }
+.cv{
+    text-decoration: none;
+    color:#ffffff;
+}
 
 @media (min-width:992){
     h1{
@@ -66,9 +70,13 @@ img{
         margin-top: 80px;
     }
 } 
- 
 @media (max-width: 576px) {
     img{
         max-width: 0%;
+    }
+} 
+@media (max-width: 360px) {
+    .hero-text{
+        margin-left: 4vh;
     }
 } 

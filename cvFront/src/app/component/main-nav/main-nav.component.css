@@ -32,6 +32,17 @@ a:hover{
 .menuWeb a{
   margin-left: 20px;
 }
+.mat-nav-list a{
+  font-family: 'Raleway', sans-serif; 
+  font-weight:500;
+  color:#a6a9b6;
+  margin-left: 1em;
+  margin-top: 100em;
+}
+.mat-nav-list a:hover{
+  font-weight:700;
+  color:#000000;
+}
 
 @media (min-width:590px){
   .sidenav {

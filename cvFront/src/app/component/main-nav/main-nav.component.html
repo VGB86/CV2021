@@ -3,12 +3,12 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>VGB CV</mat-toolbar>
     <mat-nav-list>
-      <a (click)="navigateTo($event)" routerLink="" fragment="hero">inicio</a>
-      <a (click)="navigateTo($event)" routerLink="" fragment="proyectos">proyectos</a>
-      <a (click)="navigateTo($event)" routerLink="" fragment="about">sobre mi</a>
-      <a (click)="navigateTo($event)" routerLink="" fragment="contacto">contacto</a>
+      <a (click)="navigateTo($event)" routerLink="" fragment="hero">inicio</a><br>
+      <a (click)="navigateTo($event)" routerLink="" fragment="proyectos">proyectos</a> <br>
+      <a (click)="navigateTo($event)" routerLink="" fragment="about">sobre mi</a><br>
+      <a (click)="navigateTo($event)" routerLink="" fragment="contacto">contacto</a><br>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>

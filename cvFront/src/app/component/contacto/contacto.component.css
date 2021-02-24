@@ -32,6 +32,10 @@ footer{
 footer p{
     margin-top: 3vh;
 }
+footer a{
+    font-size: xx-small;
+    color: #cccc;
+}
 
 @media(max-width:992px){
     .cabecera{
@@ -62,3 +66,10 @@ footer p{
         padding-left: 0px;
     }
 }
+
+@media (max-width: 415px) {
+    .links {
+        display: block;
+        text-align: center;
+    } 
+} 

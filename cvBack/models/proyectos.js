@@ -10,7 +10,7 @@ let proyectoShema = new Schema({
     imagen:String,
     categoria:{
         type:String,
-        enum:['Angular','Front end', 'MEAN']
+        enum:['Angular','Html/CSS/JS','MEAN']
     }
 
 });
