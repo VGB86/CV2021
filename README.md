@@ -1,1 +1,5 @@
-# CV2021
+# Bienvenid@ CV2021
+
+GitHub para mostar código de proyecto MEAN. 
+
+
